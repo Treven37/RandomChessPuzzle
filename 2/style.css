@@ -1,0 +1,149 @@
+		* {
+			box-sizing: border-box;
+		}
+		html {
+			background: black;
+		}
+		body {
+			padding: 0; margin: 0;
+			
+		}
+		main {
+			height: 100%;
+			width: 100%;
+			display: flex;
+			flex-flow: column;
+			background: #0a0e11;
+		}
+		.space {
+			flex: 1;
+			color: white;
+			padding: 5vw 5vw;
+			display: flex;
+			justify-content: center;
+			align-text: center;
+			align-items: center;
+			width: 100%;
+		}
+		.board {
+			display: flex;
+			flex-flow: column;
+			width: 100vw;
+			height: 100vw;
+		}
+		.row {
+			flex: 1;
+			width: 100vw;
+			display: flex;
+			flex-flow: row;
+		}
+		.white, .black {
+			display: flex;
+			justify-content: center;
+			align-text: center;
+			align-items: center;
+			flex: 1;
+			position: relative;
+			padding: 0; margin: 0;
+			opacity: 1;
+			aspect-ratio: 1/1;
+			font-size: 3vw;
+			background-image: url("./dont.png");
+		}
+		.removed {
+			flex: 1;
+			position: relative;
+			padding: 0; margin: 0;
+			
+			z-index: 1;
+			opacity: 1;
+			font-size: 5vw;
+			font-weight: 700;
+			//background-image: url("./dont.png");
+		}
+		.white .char, .black .char {
+			height: 100%;
+			width: 100%;
+			top: 0;
+			right: 0;
+			margin: auto;
+			position: absolute;
+			//opacity: 0;
+			z-index: 1;
+			
+		}
+		.removed img {
+			height: 100%;
+			width: 100%;
+			position: relative;
+		}
+		img { border-radius: 50%; z-index: 37}
+		.white {
+			//background: #eeeed2;
+			background-image: linear-gradient(45deg, #ceceb2, #fffff2);
+			//background: black;
+		}
+		.black {
+			background: #769656;
+			background-image: linear-gradient(45deg, #668646, #a6c686);
+			//background: #eeeed2;
+			//background: black;
+		}
+		h5 {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 37;
+			font-size: 3vw;
+			padding: 0; margin: 0;
+			position: absolute;
+			background: black;
+			border-radius: 50%;
+			height: 4vw;
+			width: 4vw;
+			top: 0;
+			right: 0;
+			color: white;
+			opacity: 0;
+		}
+		.class {
+			position: absolute;
+			height: 66%;
+			width: 66%;
+			bottom: 0;
+			right: 0;
+			opacity: 0;
+			z-index: 1;
+		}
+		.class2 {
+			position: absolute;
+			height: 66%;
+			width: 66%;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			z-index: 2;
+		}
+		button {
+			width: 73vw;
+			height: 11vw;
+			border: none;
+			border-radius: 6vw;
+			outline: none;
+		}
+		button:active {
+			width: 73vw;
+			height: 11vw;
+			border-radius: 6vw;
+			background: green;
+		}
+		h1 {
+			position: fixed;
+			top: 15vw;
+			
+		}
+		.h5bot {
+			display: none;
+			
+		}
+		
